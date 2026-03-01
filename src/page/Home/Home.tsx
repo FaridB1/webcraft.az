@@ -1,4 +1,4 @@
-import style from "./Home.module.scss"; 
+// import style from "./Home.module.scss"; 
 import  Hero from "../../sections/Hero/Hero";
 import  Services from "../../sections/Services/Services";
 import  Projects from "../../sections/Projects/Projects";

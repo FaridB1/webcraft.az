@@ -1,7 +1,7 @@
 import styles from "./About.module.scss";
 import { ArrowRight, CheckCircle } from "lucide-react";
 // import { motion } from "framer-motion";
-import { LogoCloud } from "../../components/ui/LogoCloud";
+// import { LogoCloud } from "../../components/ui/LogoCloud";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
