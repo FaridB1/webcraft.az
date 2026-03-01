@@ -1,0 +1,238 @@
+// .cta {
+//   padding: 120px 0;
+//   background: linear-gradient(135deg, #6366f1, #22d3ee);
+// }
+
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 60px 50px;
+//   border-radius: 32px;
+//   background: rgba(255, 255, 255, 0.1);
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   gap: 40px;
+//   backdrop-filter: blur(20px);
+// }
+
+// .left {
+//   max-width: 600px;
+
+//   h2 {
+//     font-size: 42px;
+//     color: white;
+//     margin-bottom: 16px;
+//   }
+
+//   p {
+//     color: rgba(255, 255, 255, 0.9);
+//     font-size: 18px;
+//     margin-bottom: 24px;
+//   }
+
+//   ul {
+//     list-style: none;
+//     padding: 0;
+
+//     li {
+//       color: white;
+//       margin-bottom: 10px;
+//       font-size: 15px;
+//     }
+//   }
+// }
+
+// .right {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .button {
+//   background: white;
+//   color: #6366f1;
+//   padding: 16px 28px;
+//   border-radius: 14px;
+//   font-weight: 600;
+//   font-size: 18px;
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   text-decoration: none;
+//   transition: 0.3s ease;
+
+//   &:hover {
+//     transform: translateY(-4px);
+//     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+//   }
+// }
+
+// .note {
+//   margin-top: 10px;
+//   font-size: 13px;
+//   color: rgba(255, 255, 255, 0.8);
+// }
+
+// /* Responsive */
+// @media (max-width: 900px) {
+//   .container {
+//     flex-direction: column;
+//     text-align: center;
+//   }
+
+//   .left h2 {
+//     font-size: 32px;
+//   }
+// }
+
+.cta {
+  padding: clamp(80px, 10vw, 120px) 0;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(30px, 5vw, 60px) clamp(20px, 5vw, 50px);
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ================= LEFT ================= */
+
+.left {
+  max-width: 600px;
+
+  h2 {
+    font-size: clamp(26px, 4vw, 42px);
+    color: white;
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(15px, 2vw, 18px);
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      color: white;
+      margin-bottom: 10px;
+      font-size: clamp(14px, 2vw, 15px);
+    }
+  }
+}
+
+/* ================= RIGHT ================= */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BUTTON */
+
+.button {
+  background: white;
+  color: #6366f1;
+  padding: clamp(14px, 2vw, 16px) clamp(20px, 4vw, 28px);
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: clamp(15px, 2vw, 18px);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.note {
+  margin-top: 10px;
+  font-size: clamp(12px, 2vw, 13px);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+    border-radius: 24px;
+  }
+
+  .left h2 {
+    font-size: 24px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .note {
+    font-size: 12px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 70px 0;
+  }
+
+  .container {
+    padding: 24px 16px;
+  }
+
+  .left h2 {
+    font-size: 22px;
+  }
+
+  .left ul li {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.order {
+  padding: 120px 0;
+  background: #ffffff;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 650px;
+  margin-bottom: 90px;
+
+  h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 20px 0;
+    color: #111827;
+  }
+
+  p {
+    font-size: 18px;
+    color: #6b7280;
+  }
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #9ca3af;
+
+  span {
+    margin: 0 6px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 70px;
+}
+
+/* LEFT SIDE */
+
+.contactCard {
+  padding: 50px;
+  border-radius: 24px;
+  background: #f9fafb;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+
+  h3 {
+    margin-bottom: 35px;
+    font-size: 22px;
+    color: #111827;
+  }
+}
+
+.infoItem {
+  margin-bottom: 28px;
+
+  span {
+    font-size: 13px;
+    color: #9ca3af;
+  }
+
+  p {
+    margin-top: 6px;
+    font-weight: 500;
+    color: #111827;
+  }
+}
+
+.socials {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+
+  svg {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #6b7280;
+
+    &:hover {
+      color: #2563eb;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+/* FORM */
+
+.formWrapper {
+  padding: 60px;
+  border-radius: 28px;
+  background: #ffffff;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.06);
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #111827;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+input,
+textarea {
+  border: 1px solid #e5e7eb;
+  padding: 16px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+  background: #f9fafb;
+
+  &:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.submitBtn {
+  margin-top: 10px;
+  background: #111827;
+  color: white;
+  padding: 16px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s;
+
+  &:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.2);
+  }
+}
+
+/* RESPONSIVE */
+/* ===============================
+   LARGE DESKTOP (1400px+)
+================================= */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .header h1 {
+    font-size: 60px;
+  }
+
+  .formWrapper {
+    padding: 70px;
+  }
+
+  .contactCard {
+    padding: 60px;
+  }
+}
+
+/* ===============================
+   DESKTOP (1200px - 1399px)
+================================= */
+@media (max-width: 1399px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .header h1 {
+    font-size: 48px;
+  }
+}
+
+/* ===============================
+   TABLET LANDSCAPE (992px - 1199px)
+================================= */
+@media (max-width: 1199px) {
+  .grid {
+    gap: 50px;
+  }
+
+  .header {
+    margin-bottom: 70px;
+  }
+
+  .header h1 {
+    font-size: 42px;
+  }
+
+  .formWrapper {
+    padding: 50px;
+  }
+
+  .contactCard {
+    padding: 45px;
+  }
+}
+
+/* ===============================
+   TABLET (768px - 991px)
+================================= */
+@media (max-width: 991px) {
+  .order {
+    padding: 90px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .formWrapper {
+    padding: 40px;
+  }
+
+  .contactCard {
+    padding: 35px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   MOBILE LARGE (576px - 767px)
+================================= */
+@media (max-width: 767px) {
+  .order {
+    padding: 70px 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .header p {
+    font-size: 15px;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+  }
+
+  .formWrapper {
+    padding: 30px 25px;
+    border-radius: 20px;
+  }
+
+  .contactCard {
+    padding: 30px 25px;
+    border-radius: 20px;
+  }
+
+  input,
+  textarea {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .submitBtn {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (max 480px)
+================================= */
+@media (max-width: 480px) {
+  .order {
+    padding: 60px 0;
+  }
+
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .formWrapper {
+    padding: 25px 18px;
+  }
+
+  .contactCard {
+    padding: 25px 18px;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
