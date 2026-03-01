@@ -21,9 +21,9 @@ const sendEmail = (e: React.FormEvent) => {
   emailjs
     .sendForm(
       "service_s6epwwd",
-      "template_7082153",
+      "template_tvx57m7",
       form.current,
-      "YOUR_PUBLIC_KEY"
+      "grD-eI0M_Fg0-MLDc"
     )
     .then(
       () => {
