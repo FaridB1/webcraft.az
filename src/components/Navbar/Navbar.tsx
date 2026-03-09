@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import styles from "./Navbar.module.scss";
+import logo from "../../assets/Əyri_üyrü_logo-removebg-preview.png";
 import {
   Home,
   Briefcase,
@@ -135,7 +136,7 @@ useEffect(() => {
         <div className={styles.inner}>
           {/* Logo */}
           <div className={styles.logo}>
-            <img src="src\assets\Əyri_üyrü_logo-removebg-preview.png" alt="Web Craft Logo" />
+            <img src={logo} alt="Web Craft Logo" />
             
           </div>
 

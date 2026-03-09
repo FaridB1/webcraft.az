@@ -34,7 +34,7 @@ const plans = [
     price: "900 AZN",
     desc: "Şirkətlər və platformalar üçün.",
     features: [
-      "Limitsiz səhifə",
+      "12 səhifə",
       "Dashboard",
       "API inteqrasiya",
       "Email & CRM",
