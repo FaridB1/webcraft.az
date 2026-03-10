@@ -61,17 +61,17 @@ const sendEmail = (e: React.FormEvent) => {
 
               <div className={styles.infoItem}>
                 <span>Ünvan</span>
-                <p>Zərifə Əliyeva 55, Yeni Həyat Plaza</p>
+                <p>Qara Qarayev mts , Azər Manafov 1</p>
               </div>
 
               <div className={styles.infoItem}>
                 <span>Telefon</span>
-                <p>(+994) 50 224 73 00</p>
+                <p>(+994) 70 310 76 66</p>
               </div>
 
               <div className={styles.infoItem}>
                 <span>Email</span>
-                <p>info@webcraft.az</p>
+                <p>webcraftazz@gmail.com</p>
               </div>
 
               <div className={styles.socials}>
